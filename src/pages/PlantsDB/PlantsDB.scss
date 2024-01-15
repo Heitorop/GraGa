@@ -1,0 +1,18 @@
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .search-wrapper {
+    margin-top: 100px;
+  }
+
+  .cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}

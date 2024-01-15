@@ -1,0 +1,23 @@
+.search {
+  &-wrapper {
+    h1 {
+      font-size: 50px;
+      color: #00ff88;
+    }
+  }
+
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 1rem;
+  color: #228b22;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+
+  &:focus {
+    outline-color: #228b22;
+  }
+}

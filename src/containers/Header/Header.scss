@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #86c995; /* Світло-зелений колір */
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* Білий колір тексту */
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.navbar {
+  background-color: #86c995;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+  height: 100%;
+}
+
+.nav-list a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #00ff88;
+}

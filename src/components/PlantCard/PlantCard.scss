@@ -1,6 +1,9 @@
+@import '../../styles/mixins.scss';
+
 .card-wrapper {
   height: 420px;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   margin: 50px auto;
   background-color: #eee;
   border-radius: 7px 7px 7px 7px;
@@ -40,8 +43,7 @@
         font-size: 13px;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
-        // text-transform: uppercase;
-        color: #d2d2d2;
+        color: #b7b7b7;
         letter-spacing: 0.2em;
       }
 
@@ -91,6 +93,66 @@
 
         &:hover {
           background-color: #79b0a1;
+        }
+      }
+    }
+  }
+
+  @include respond-to(cardBig) {
+    max-width: 450px;
+    height: 300px;
+
+    .card {
+      &-img {
+        img {
+          height: 100%;
+          width: 210px;
+          border-radius: 7px 0 0 7px;
+        }
+      }
+
+      &-content {
+        padding: 20px 0 20px;
+      }
+
+      &-text {
+        h1 {
+          padding-top: 0;
+          font-size: 20px;
+          color: #474747;
+          font-family: 'Bentham', serif;
+        }
+
+        ul {
+          font-size: 13px;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          // text-transform: uppercase;
+          color: #d2d2d2;
+          letter-spacing: 0.2em;
+        }
+
+        p {
+          font-family: 'Playfair Display', serif;
+          color: #8d8d8d;
+          line-height: 1.7em;
+          font-size: 15px;
+          font-weight: lighter;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  @include respond-to(mobile) {
+    .card {
+      &-content {
+        padding: 20px 10px;
+      }
+      &-price-btn {
+        margin-bottom: 20px;
+
+        button {
+          padding: 10px 0;
         }
       }
     }

@@ -1,3 +1,5 @@
+@import '../../styles/mixins.scss';
+
 .cards-wrapper {
   display: flex;
   flex-direction: column;
@@ -9,10 +11,27 @@
 
   .cards {
     margin-top: 50px;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 20px;
+  }
+
+  
+  @include respond-to(cardBig) {
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+  }
+
+  @include respond-to(mobile) {
+    .search-wrapper {
+      display: flex;
+      padding: 0 20px;
+    }
+
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
   }
 }

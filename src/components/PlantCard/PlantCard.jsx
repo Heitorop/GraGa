@@ -22,7 +22,6 @@ const PlantCard = (props) => {
           <h1>{props.title}</h1>
           <ul>
             <li>Kingdom : {props.classification.kingdom}</li>
-            <li>Clades : {props.classification.clades?.join(', ')}</li>
             <li>Order : {props.classification.order}</li>
             <li>Family :{props.classification.family}</li>
             <li>Genus : {props.classification.genus}</li>

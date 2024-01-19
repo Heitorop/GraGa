@@ -112,7 +112,7 @@
       }
 
       &-content {
-        padding: 20px 0 20px;
+        padding: 20px;
       }
 
       &-text {
@@ -127,7 +127,6 @@
           font-size: 13px;
           font-family: 'Raleway', sans-serif;
           font-weight: 400;
-          // text-transform: uppercase;
           color: #d2d2d2;
           letter-spacing: 0.2em;
         }
@@ -144,7 +143,16 @@
     }
   }
   @include respond-to(mobile) {
+    flex-direction: column;
+    height: auto;
     .card {
+      &-img {
+        img {
+          border-radius: 0 0 7px 7px;
+          width: minmax(290px,300px);
+          height: minmax(180px,290px);
+        }
+      }
       &-content {
         padding: 20px 10px;
       }
